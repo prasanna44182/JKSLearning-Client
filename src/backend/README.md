@@ -1,35 +1,35 @@
 # The Backend Code Folder
 
-This folder contains the backend code files for your site. These files correspond to the ones found in the [**Backend**](https://support.wix.com/en/article/velo-working-with-the-velo-sidebar#backend) section of the **Public & Backend** 
-![image](https://user-images.githubusercontent.com/89579857/184862813-e55cdd98-b723-4d64-b73c-593eb9af21c7.png) tab in the Velo sidebar. Add the following files to this folder to include them in your site:
+This folder contains the backend code files for the site. These files correspond to the ones found in the [**Backend**](https://support.wix.com/en/article/velo-working-with-the-velo-sidebar#backend) section of the **Public & Backend** 
+![image](https://user-images.githubusercontent.com/89579857/184862813-e55cdd98-b723-4d64-b73c-593eb9af21c7.png) tab in the Velo sidebar. Add the following files to this folder to include them in the site:
 + [**Web Modules:**](https://support.wix.com/en/article/velo-web-modules-calling-backend-code-from-the-frontend)  
   These are files that allow you to expose functions in your site's backend that you can run in your frontend code. These files require a `.jsw` file extension.
   >**Note:**  
   >You can't change [web module permissions](https://support.wix.com/en/article/velo-about-web-module-permissions) in Wix editors when using Git Integration & Wix CLI. Instead, use the [permissions.json](#permissionsjson) file to set function permissions.
 
 + **data.js**  
-  A file for [adding data hooks](https://support.wix.com/en/article/velo-using-data-hooks) to your site's collections.
+  A file for [adding data hooks](https://support.wix.com/en/article/velo-using-data-hooks) to the site's collections.
 
 + **routers.js**  
-  A file for implementing [routing and sitemap](https://support.wix.com/en/article/velo-about-routers#routing-code) functionality for your site.
+  A file for implementing [routing and sitemap](https://support.wix.com/en/article/velo-about-routers#routing-code) functionality for the site.
 
 + **events.js**  
-  A file for implementing your site's [backend event handlers](https://support.wix.com/en/article/velo-backend-events). 
+  A file for implementing the site's [backend event handlers](https://support.wix.com/en/article/velo-backend-events). 
 
 + **http-functions.js**  
-  A file for implementing [HTTP endpoints](https://www.wix.com/velo/reference/wix-http-functions/introduction) that are exposed on your site.
+  A file for implementing [HTTP endpoints](https://www.wix.com/velo/reference/wix-http-functions/introduction) that are exposed on the site.
 
 + **jobs.config**  
   A file for [scheduling recurring jobs](https://support.wix.com/en/article/velo-scheduling-recurring-jobs). Jobs consist of other backend code that's run at regular intervals.
   
 + **General backend files**  
-  JavaScript code files. You can import code from these files into any other backend file on your site. These files require a `.js` file extension.
+  JavaScript code files. we can import code from these files into any other backend file on the site. These files require a `.js` file extension.
 
 Use the following syntax to import code from backend files: 
 ```js 
 import { myFunctionName } from 'backend/myFileName';
 ```  
-Trying to import from the relative path in your site's repo doesn't work.
+Trying to import from the relative path in the site's repo doesn't work.
 
 Learn more about [this repo's file structure](https://support.wix.com/en/article/velo-understanding-your-sites-github-repository-beta).
 
